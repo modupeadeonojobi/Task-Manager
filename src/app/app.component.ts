@@ -7,7 +7,7 @@ import { FormGroup, FormBuilder, Validators } from '@angular/forms';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent implements OnInit {
-  title = 'Todos';
+  title = 'Task Manager';
 
   currentDate = new Date();
   searchForm!: FormGroup;
