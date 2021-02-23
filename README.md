@@ -33,15 +33,15 @@ At a glance, a user can see his active task.
 
 
     `addTask(): any {
-    if (this.searchForm.valid) {
-      const searchItem = this.searchForm.controls.searchItem.value;
-      let value = {
-        name: searchItem, id: this.isNotCompleteList.length + 1, isCompleted: false
-      };
-      this.isNotCompleteList.unshift(value);
-      this.searchForm.reset();
-    }
-  }`
+        if (this.searchForm.valid) {
+        const searchItem = this.searchForm.controls.searchItem.value;
+        let value = {
+            name: searchItem, id: this.isNotCompleteList.length + 1, isCompleted: false
+        };
+        this.isNotCompleteList.unshift(value);
+        this.searchForm.reset();  
+    }}`
+  
   
 
 ## Status
