@@ -1,0 +1,101 @@
+.container {
+    background-color: #393f49;
+    position: absolute;
+    top: 15%;
+    right: 15%;
+    height: 70%;
+    width: 70%;   
+    box-shadow: 2px 4px 5px rgba(0, 0, 0, 0.3);
+    border-radius: 1%;
+}
+
+.wrapper {
+    padding: .2rem 2rem;
+    position: relative;
+}
+
+.wrapper h2 {
+    margin-bottom: .1rem;
+    color: #fff;
+}
+
+.wrapper span {
+    color: #4e90a5;
+    font-size: .9rem;
+    font-weight: 100;  
+}
+
+.ul {
+    position: absolute;
+    top: 5%;
+    left: 68%;
+}
+
+.li {
+    text-decoration: none;
+    display: inline-block;
+    padding: 1.6rem;
+    white-space: nowrap;
+}
+
+.custom-btn {
+    color: #fff;
+    border: 0;
+    cursor: pointer;
+    font-family: inherit;
+}
+
+.custom-btn:active {
+    transform: scale(0.98);
+}
+
+button:disabled {
+    background-color: gray;
+    cursor: not-allowed;
+}
+
+.search .input {
+    background-color: #fff;
+    border: 0;
+    font-size: 16px;
+    padding: 16px;
+    margin: 2.4rem 0;
+    height: 40px;
+}
+
+button {
+    background-color: var(--main-color);
+    height: 40.9px;
+    padding-bottom: 2.6px;
+    font-size: 16px; 
+}
+
+.btn:focus, button:focus
+.input:focus {
+    outline: none;
+}
+
+.h-line {
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+hr {
+    margin: 15px 0;
+}
+
+.tasks {
+    color: #fff;
+    font-size: 1.6rem;
+    position: relative;
+}
+
+.fa, .far, .fas {
+    position: absolute;
+    right: 3%;
+}
+
+input[type=checkbox] {
+    width: 3%;
+}
+
