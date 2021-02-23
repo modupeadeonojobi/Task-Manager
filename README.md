@@ -1,27 +1,50 @@
-# Benue
+## Task Manager
+>A simple task app built with Angular.
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.0.6.
+## Table of contents
+* [General info](#general-info)
+<!--* [Screenshots](#screenshots) -->
+* [Technologies](#technologies)
+* [Setup](#setup)
+* [Status](#status)
 
-## Development server
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
-## Code scaffolding
+## General info
+This app manages users task. A user can add new task, mark as completed and delete tasks.
+At a glance, a user can see his active task.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+<!--## Screenshots
+![Example screenshot](stil in progress) -->
 
-## Build
+## Technologies
+* Angular  - version 11.0.6.
+* Bootstrap - version 4.6.0
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
 
-## Running unit tests
+## Setup
+* Download the source code using git or else download and unzip the zip file.
+* Open a terminal window and go to the project root folder.
+* You need to have npm installed globally.
+* Run npm i to install the required libraries.
+* Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## Code Examples
 
-## Running end-to-end tests
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+    `addTask(): any {
+    if (this.searchForm.valid) {
+      const searchItem = this.searchForm.controls.searchItem.value;
+      let value = {
+        name: searchItem, id: this.isNotCompleteList.length + 1, isCompleted: false
+      };
+      this.isNotCompleteList.unshift(value);
+      this.searchForm.reset();
+    }
+  }`
+  
 
-## Further help
+## Status
+Project is: _completed_.
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
