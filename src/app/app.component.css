@@ -3,7 +3,8 @@
     position: absolute;
     top: 15%;
     right: 15%;
-    height: 70%;
+    height: 71%;
+    overflow: auto;
     width: 70%;   
     box-shadow: 2px 4px 5px rgba(0, 0, 0, 0.3);
     border-radius: 1%;
@@ -82,6 +83,7 @@ button {
 
 hr {
     margin: 15px 0;
+    /* padding-bottom: ; */
 }
 
 .tasks {
