@@ -7,13 +7,13 @@ import { FormGroup, FormBuilder, Validators } from '@angular/forms';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent implements OnInit {
-  title = 'Task Manager';
+  title = 'Todos';
 
   currentDate = new Date();
   searchForm!: FormGroup;
 
   isDisable!: string;
-  
+
   isCompleteList: any[] = [];
   isNotCompleteList: any[] = []
   isComplete: boolean = false;
@@ -47,10 +47,10 @@ export class AppComponent implements OnInit {
     } else {
       const index = this.isCompleteList.indexOf(item);
       this.isCompleteList.splice(index, 1);
-    }   
-
     }
-  
+
+  }
+
 
   toggleTask(number: number): any {
     if (number === 0) {
